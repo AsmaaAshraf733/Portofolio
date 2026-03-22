@@ -1,0 +1,355 @@
+/* Global */
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+margin:0;
+padding:0;
+}
+
+/* Navbar */
+
+.navbar-brand{
+font-weight:700;
+font-size:22px;
+letter-spacing:1px;
+}
+
+.navbar-nav .nav-link{
+font-weight:500;
+}
+/* Hero Section */
+
+/* Typing cursor effect only while typing */
+.typing-cursor::after {
+    content: "|";
+    animation: blink 1s infinite;
+    margin-left:5px;
+}
+
+@keyframes blink {
+    0% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+background:linear-gradient(135deg,#f5f7ff,#e9ecff);
+padding-top:80px;
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+flex-wrap:wrap;
+}
+
+/* Hero Text */
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:48px;
+font-weight:700;
+}
+
+.name {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  -webkit-background-clip: text; /* Chrome, Safari */
+  -webkit-text-fill-color: transparent; /* Chrome, Safari */
+  background-clip: text; /* Firefox */
+  color: transparent; /* fallback */
+  font-weight: 800;
+}
+/* Typing subtitle */
+
+.hero-subtitle{
+font-size:20px;
+margin:15px 0 25px;
+color:#555;
+}
+
+/* Buttons */
+
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.hero-btn{
+padding:12px 25px;
+border-radius:30px;
+font-size:16px;
+transition:0.3s;
+}
+
+.hero-btn:hover{
+transform:translateY(-2px);
+}
+
+/* Hero Image */
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.hero-image img:hover{
+transform:scale(1.05);
+}
+
+/* Sections */
+
+.section{
+padding:80px 0;
+}
+
+/* About */
+
+.about-text{
+max-width:800px;
+margin:auto;
+font-size:18px;
+line-height:1.9;
+color:#555;
+font-weight:400;
+letter-spacing:0.3px;
+font-family:'Poppins', sans-serif;
+}
+
+#about h2{
+font-weight:700;
+margin-bottom:25px;
+}
+
+/* Skills */
+
+.progress{
+margin-bottom:20px;
+height:10px;
+}
+
+.progress-bar{
+background:#4f46e5;
+}
+
+/* Projects */
+
+/* Project Cards */
+.project-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.4s;
+  
+  display: flex;
+  flex-direction: column; /* stack image + body vertically */
+  height: 100%; /* let flex container control height */
+}
+
+/* Make image scale to description height */
+.project-card img {
+  width: 100%;
+  object-fit: cover;
+  flex: 1 0 auto; /* grow/shrink dynamically */
+  transition: 0.5s;
+}
+
+/* Card body (description) takes remaining space */
+.project-card .card-body {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes buttons to bottom */
+  padding: 15px;
+}
+
+/* Image zoom on hover */
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card lift effect */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Project buttons */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap; /* stack buttons on small screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #projects .row {
+    flex-direction: column; /* stack cards vertically */
+    gap: 20px;
+  }
+
+  .project-buttons {
+    justify-content: center; /* center buttons on mobile */
+  }
+}/* Projects */
+
+/* Project Cards */
+.project-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.4s;
+  
+  display: flex;
+  flex-direction: column; /* stack image + body vertically */
+  height: 100%; /* let flex container control height */
+}
+
+/* Make image scale to description height */
+.project-card img {
+  width: 100%;
+  object-fit: cover;
+  flex: 1 0 auto; /* grow/shrink dynamically */
+  transition: 0.5s;
+}
+
+/* Card body (description) takes remaining space */
+.project-card .card-body {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes buttons to bottom */
+  padding: 15px;
+}
+
+/* Image zoom on hover */
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card lift effect */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Project buttons */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap; /* stack buttons on small screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #projects .row {
+    flex-direction: column; /* stack cards vertically */
+    gap: 20px;
+  }
+
+  .project-buttons {
+    justify-content: center; /* center buttons on mobile */
+  }
+}
+
+/* Contact */
+
+form input,
+form textarea{
+border-radius:10px;
+}
+
+/* Footer */
+
+footer{
+font-size:14px;
+}
+
+/* Typing Cursor */
+
+#typing::after{
+content:"|";
+animation:blink 1s infinite;
+}
+
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0;}
+100%{opacity:1;}
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  /* Keep hero section responsive */
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    z-index: 9999; /* make sure it's on top */
+  }
+
+  /* Collapse menu doesn't take full width */
+  .navbar-collapse {
+    width: auto; /* shrink to content */
+    position: absolute; /* so it floats */
+    top: 100%; /* below navbar */
+    right: 0; /* align to the right */
+    background-color: #343a40; /* same as navbar-dark bg-dark */
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  /* Navbar links spacing */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-end; /* align items to the right */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 0;
+    text-align: right; /* text aligned right */
+  }
+}
