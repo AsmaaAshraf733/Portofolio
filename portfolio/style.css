@@ -285,9 +285,43 @@ border-radius:10px;
 }
 
 /* Footer */
+footer {
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
 
-footer{
-font-size:14px;
+/* Elegant Social Contact Bar */
+.social-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* spacing between icons */
+  z-index: 9999;
+}
+
+.social-bar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: white;
+  background: #333; /* dark background */
+  border-radius: 50%; /* circular icons */
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.social-bar a:hover {
+  background: #4f46e5; /* primary gradient color */
+  transform: translateX(-5px) scale(1.1); /* elegant hover effect */
+  color: #fff;
 }
 
 /* Typing Cursor */
