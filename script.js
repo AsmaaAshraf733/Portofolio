@@ -1,32 +1,50 @@
-document.querySelectorAll("a[href^='#']").forEach(anchor => {
-
-anchor.addEventListener("click", function(e){
-
-e.preventDefault();
-
-document.querySelector(this.getAttribute("href")).scrollIntoView({
-behavior:"smooth"
+document.querySelectorAll("a[href^='#']").forEach(a => {
+  a.addEventListener("click", e => {
+    e.preventDefault();
+    document.querySelector(a.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 });
 
-});
+// typing effect
+const text = "Full Stack .NET Developer | IT Student";
+let i = 0;
 
-});
+function type() {
+  const el = document.getElementById("typing");
+  if (!el) return;
 
-const text = "Full Stack .NET Developer | IT Student ";
-
-let index = 0;
-
-function typeEffect() {
-    const typingElement = document.getElementById("typing");
-
-    if (index < text.length) {
-        typingElement.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, 80);
-    } else {
-        // Remove the cursor after typing finishes
-        typingElement.classList.remove("typing-cursor");
-    }
+  if (i < text.length) {
+    el.innerHTML += text[i++];
+    setTimeout(type, 80);
+  }
 }
 
-typeEffect();
+type();
+
+// =======================
+// EMAILJS (WORKING SETUP)
+// =======================
+
+(function () {
+  emailjs.init("rEG5Zy_qW_eomyGdD"); 
+})();
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_s1ux51p",   
+    "template_qy812dq", 
+    e.target
+  )
+  .then(() => {
+    alert("Message sent successfully!");
+    e.target.reset();
+  })
+  .catch((error) => {
+    alert("FAILED - check EmailJS setup");
+    console.log(error);
+  });
+}

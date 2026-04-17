@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,24 +10,21 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand">Asmaa</a>
+    <a class="navbar-brand" href="#home">Asmaa</a>
 
-    <!-- Hamburger toggle button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" 
-            aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible menu -->
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -42,244 +37,171 @@
   </div>
 </nav>
 
-<!-- Hero -->
-
+<!-- HERO -->
 <section id="home" class="hero">
+  <div class="container hero-container">
 
-<div class="container hero-container">
+    <div class="hero-text">
+      <h1>Hello, I'm <span class="name">Asmaa Ashraf</span></h1>
 
-<div class="hero-text">
+      <p class="hero-subtitle">
+        <span id="typing" class="typing-cursor"></span>
+      </p>
 
-<h1>Hello, I'm <span class="name">Asmaa Ashraf</span></h1>
+      <div class="hero-buttons">
+        <a href="CV.pdf" target="_blank" class="btn btn-outline-dark hero-btn">View CV</a>
+        <a href="CV.pdf" download class="btn btn-dark hero-btn">Download CV</a>
+      </div>
+    </div>
 
-<p class="hero-subtitle">
-  <span id="typing" class="typing-cursor"></span>
-</p>
-<div class="hero-buttons">
+    <div class="hero-image">
+      <img src="assets/myphoto0.png" alt="Asmaa Ashraf">
+    </div>
 
-<!-- <a href="#projects" class="btn btn-primary hero-btn">View My Work</a> -->
-
-<a href="CV.pdf" target="_blank" class="btn btn-outline-dark hero-btn">
-View CV
-</a>
-
-<a href="CV.pdf" download class="btn btn-dark hero-btn">
-Download CV
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-<img src="assets/myphoto0.png" alt="Asmaa Ashraf">
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<!-- About -->
-
+<!-- ABOUT -->
 <section id="about" class="container section">
+  <h2 class="text-center">About Me</h2>
 
-<h2 class="text-center">About Me</h2>
-
-<p class="text-center about-text">
-
-I am <strong>Asmaa Ashraf</strong>, a third-year Computer Science student specializing in 
-<strong>Information Technology (IT)</strong>.
-
-I am passionate about <strong>Full Stack Web Development using .NET technologies</strong> and enjoy creating modern, responsive, and user-friendly web applications.
-
-During my studies, I have built a strong foundation in front-end technologies including 
-<strong>HTML, CSS, and JavaScript</strong>, and I continuously work on expanding my skills in backend development using <strong>C# and .NET</strong>.
-
-My goal is to become a professional software developer and contribute to building scalable and impactful web applications.
-
-</p>
-
+  <p class="text-center about-text">
+    I am <strong>Asmaa Ashraf</strong>, a third-year Computer Science student specializing in <strong>Information Technology (IT)</strong>. I am passionate about <strong>Full Stack Web Development using .NET technologies</strong> and enjoy creating modern, responsive, and user-friendly web applications. During my studies, I have built a strong foundation in front-end technologies including <strong>HTML, CSS, and JavaScript</strong>, and I continuously work on expanding my skills in backend development using <strong>C# and .NET</strong>. My goal is to become a professional software developer and contribute to building scalable and impactful web applications. </p>
 </section>
 
-<!-- Skills -->
-
+<!-- SKILLS -->
 <section id="skills" class="section bg-light">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
 
-<div class="container">
+    <div class="row">
 
-<h2 class="text-center">Skills</h2>
+      <div class="col-md-6">
+        <p>HTML</p><div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+        <p>CSS</p><div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+        <p>JavaScript</p><div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+      </div>
 
-<div class="row">
+      <div class="col-md-6">
+        <p>.NET / C#</p><div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+        <p>Bootstrap</p><div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+        <p>SQL</p><div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+      </div>
 
-<div class="col-md-6">
-
-<p>HTML</p>
-<div class="progress">
-<div class="progress-bar" style="width:90%"></div>
-</div>
-
-<p>CSS</p>
-<div class="progress">
-<div class="progress-bar" style="width:85%"></div>
-</div>
-
-<p>JavaScript</p>
-<div class="progress">
-<div class="progress-bar" style="width:80%"></div>
-</div>
-
-</div>
-
-<div class="col-md-6">
-
-<p>.NET / C#</p>
-<div class="progress">
-<div class="progress-bar" style="width:75%"></div>
-</div>
-
-<p>Bootstrap</p>
-<div class="progress">
-<div class="progress-bar" style="width:80%"></div>
-</div>
-
-<p>SQL</p>
-<div class="progress">
-<div class="progress-bar" style="width:70%"></div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
-<!-- Projects -->
-
+<!-- PROJECTS -->
 <section id="projects" class="container section">
+  <h2 class="text-center">Projects</h2>
 
-<h2 class="text-center">Projects</h2>
+  <div class="row">
 
-<div class="row">
+    <!-- Project 1 -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <img src="assets/ClinicImg.PNG" class="card-img-top" alt="Clinic System">
 
-<div class="col-md-4">
+        <div class="card-body">
+          <h5 class="card-title">Smart Clinic System</h5>
+          <p>Clinic management system with scheduling and patient records.</p>
 
-<div class="card project-card">
+          <div class="project-buttons">
+            <a href="https://github.com/AsmaaAshraf733/ClinicSystem.git" class="btn btn-dark">
+              GitHub
+            </a>
 
-<img src="assets/ClinicImg.PNG">
+            <a href="#" class="btn btn-primary">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="card-body">
+    <!-- Project 2 -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <img src="assets/ToDoImg.PNG" class="card-img-top" alt="ToDo App">
 
-<h5 class="card-title">Smart Clinic System</h5>
+        <div class="card-body">
+          <h5 class="card-title">ToDo List App</h5>
+          <p>Task management application built with HTML, CSS, and JavaScript.</p>
 
-<p>Clinic management system with scheduling and patient records.</p>
+          <div class="project-buttons">
+            <a href="https://github.com/AsmaaAshraf733/ToDoList" class="btn btn-dark">
+              GitHub
+            </a>
 
-<div class="project-buttons">
+            <a href="https://asmaaashraf733.github.io/ToDoList/" class="btn btn-primary">
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<a href="https://github.com/AsmaaAshraf733/ClinicSystem.git" class="btn btn-dark">GitHub</a>
-<a href="#" class="btn btn-primary">Live Demo</a>
+    <!-- Project 3 -->
+    <div class="col-md-4">
+      <div class="card project-card">
+        <img src="assets/MakeImg.PNG" class="card-img-top" alt="Makeup Store">
 
-</div>
+        <div class="card-body">
+          <h5 class="card-title">Makeup Store Website</h5>
+          <p>Responsive makeup store website built with HTML, CSS, JS.</p>
 
-</div>
+          <div class="project-buttons">
+            <a href="https://github.com/AsmaaAshraf733/ProductPage" class="btn btn-dark">
+              GitHub
+            </a>
 
-</div>
+            <a href="https://asmaaashraf733.github.io/ProductPage/" class="btn btn-primary">
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
-
-<div class="col-md-4">
-
-<div class="card project-card">
-
-<img src="assets/ToDoImg.PNG">
-
-<div class="card-body">
-
-<h5 class="card-title">ToDo List App</h5>
-
-<p>A simple and efficient task management application built with HTML, CSS, and JavaScript.</p>
-
-<div class="project-buttons">
-
-<a href="https://github.com/AsmaaAshraf733/ToDoList" class="btn btn-dark">GitHub</a>
-<a href="https://asmaaashraf733.github.io/ToDoList/" class="btn btn-primary">Live Demo</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card project-card">
-
-<img src="assets/MakeImg.PNG">
-
-<div class="card-body">
-
-<h5 class="card-title">Makeup Store Website</h5>
-
-<p>A responsive website for a makeup store built using HTML, CSS, and JavaScript.</p>
-
-<div class="project-buttons">
-
-<a href="https://github.com/AsmaaAshraf733/ProductPage" class="btn btn-dark">GitHub</a>
-<a href="https://asmaaashraf733.github.io/ProductPage/" class="btn btn-primary">Live Demo</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<!-- Contact -->
-
+<!-- CONTACT -->
 <section id="contact" class="bg-light section">
+  <div class="container">
+    <h2 class="text-center">Contact Me</h2>
 
-<div class="container">
+    <form class="col-md-6 mx-auto" onsubmit="sendEmail(event)">
+      
+      <input class="form-control mb-3" name="user_name" placeholder="Your Name" required>
 
-<h2 class="text-center">Contact Me</h2>
+      <input class="form-control mb-3" name="user_email" type="email" placeholder="Email" required>
 
-<form class="col-md-6 mx-auto">
+      <textarea class="form-control mb-3" name="message" rows="4" placeholder="Message" required></textarea>
 
-<input class="form-control mb-3" placeholder="Your Name">
-
-<input class="form-control mb-3" placeholder="Email">
-
-<textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
-
-<button class="btn btn-primary">Send</button>
-
-</form>
-
-</div>
-
+      <button class="btn btn-primary w-100">Send</button>
+    </form>
+  </div>
 </section>
 
-<script src="script.js"></script>
-<!-- Bootstrap JS (required for collapse) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-
+<!-- FOOTER -->
 <footer class="text-center p-3 bg-dark text-white">
+  <p>© 2026 Asmaa Ashraf</p>
+</footer>
 
-<p>© 2026 Asmaa Ashraf</p>
-<!-- SOCIAL CONTACT BAR -->
+<!-- SOCIAL BAR -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div class="social-bar">
-  <a href="https://github.com/AsmaaAshraf733" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/asmaa-abdu-4a1163375" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
 </div>
-</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
