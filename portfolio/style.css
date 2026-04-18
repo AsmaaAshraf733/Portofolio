@@ -79,3 +79,30 @@ body {
 .social-bar a:hover {
   background: #4f46e5;
 }
+
+body.dark-mode {
+  background-color: #0d1117 !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #0d1117, #161b22) !important;
+}
+
+body.dark-mode .navbar {
+  background-color: #161b22 !important;
+}
+
+body.dark-mode .bg-light {
+  background-color: #161b22 !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .project-card {
+  background-color: #161b22 !important;
+  color: #e6edf3 !important;
+}
+
+body.dark-mode footer {
+  background-color: #161b22 !important;
+}
